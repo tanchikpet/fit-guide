@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#151c23">
+  <meta name="description" content="Инструкция для коллег FIT SERVICE: открытие и закрытие станции, ответственные, необходимые данные и сроки обновления ресурсов.">
+  <title>Открытие и закрытие станции · FIT SERVICE</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23FF5C00'/%3E%3Cpath d='M9 8h15v5h-9v4h7v5h-7v5H9z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#instruction">Перейти к инструкции</a>
+  <header class="topbar">
+    <div class="topbar-inner"><img src="assets/logo.svg" alt="FIT SERVICE" width="202" height="42"><span class="topbar-divider"></span><span class="topbar-label">База знаний</span><span class="internal-label">Для команды управляющей компании</span></div>
+  </header>
+  <main class="page">
+    <section class="intro" aria-labelledby="page-title">
+      <div class="intro-copy"><div class="eyebrow">ИНСТРУКЦИЯ ПО СТАНЦИЯМ</div><h1 id="page-title">Открытие и закрытие<br>станции</h1><p>Кто передаёт данные, что меняется в 1С<br class="desktop-break"> и когда обновляются сайт и георесурсы.</p></div>
+      <div class="intro-visual"><img src="assets/station.png" alt="Станция FIT SERVICE в городе" width="2048" height="684"></div>
+    </section>
+    <div class="scenario-bar"><div class="scenarios" role="tablist" aria-label="Сценарий работы"><button id="tab-opening" class="scenario active" role="tab" aria-selected="true" aria-controls="instruction" tabindex="0" data-scenario="opening"><span class="tab-icon" aria-hidden="true">+</span>Новая станция<span class="step-count">6 этапов</span></button><button id="tab-closing" class="scenario" role="tab" aria-selected="false" aria-controls="instruction" tabindex="-1" data-scenario="closing"><span class="tab-icon" aria-hidden="true">−</span>Закрытие станции<span class="step-count">4 этапа</span></button></div><span class="scenario-hint">Выберите сценарий</span></div>
+    <div class="workspace">
+      <aside class="step-sidebar"><div class="sidebar-heading">ПОРЯДОК ДЕЙСТВИЙ</div><nav id="step-nav" aria-label="Этапы инструкции"></nav><div class="scope-note" id="scope-note"></div></aside>
+      <section id="instruction" class="instruction" role="tabpanel" aria-labelledby="tab-opening" tabindex="-1"><div id="step-content"></div><div class="step-pagination"><button id="previous" class="secondary-button">Предыдущий этап</button><span id="position-label"></span><button id="next" class="primary-button">Следующий этап</button></div></section>
+      <aside class="reference-sidebar" aria-label="Сроки и источники данных"><section class="schedule-card"><div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M7 3v4m10-4v4M3 10h18m-13 4h3m2 0h3m-8 3h3"/></svg></div><h2>Когда обновятся данные</h2><div class="schedule-entry"><span>Сайт</span><strong>Вторник и четверг</strong><p>Вечером, из данных 1С</p></div><div class="schedule-entry"><span>Фид</span><strong>Ежедневно</strong><p>20:00–21:00 НСК</p></div><div class="schedule-entry"><span>Георесурсы</span><strong>После передачи фида</strong><p>Срок зависит от модерации каждой площадки</p></div><div class="time-note">Все указанные часы — по Новосибирску.</div></section><section class="source-card"><span class="mini-label">ИСТОЧНИК ДАННЫХ</span><h2>Сначала — 1С</h2><p>Сайт и фид используют данные карточки станции. Исправления вносите в 1С, затем проверяйте результат после регламентного обновления.</p></section></aside>
+    </div>
+    <section class="responsibilities" aria-labelledby="roles-title"><div class="section-heading"><div><span class="eyebrow">УЧАСТНИКИ ПРОЦЕССА</span><h2 id="roles-title">Кто за что отвечает</h2></div><span class="small-note">Роли из рабочего сценария</span></div><div class="role-grid"><div class="role-item"><span class="role-number">01</span><h3>Отдел открытия</h3><p>Письмо и исходные данные. Актуальная дата открытия в 1С.</p></div><div class="role-item"><span class="role-number">02</span><h3>Техподдержка</h3><p>Создание карточки станции в 1С и её закрытие.</p></div><div class="role-item"><span class="role-number">03</span><h3>Скриптологи КЦ</h3><p>Добавление постов станции в 1С.</p></div><div class="role-item"><span class="role-number">04</span><h3>Менеджер проектов</h3><p>Сайт, лендинги и фид.</p></div><div class="role-item"><span class="role-number">05</span><h3>Менеджер сопровождения</h3><p>Письмо с датой и причиной закрытия.</p></div><div class="role-item"><span class="role-number">06</span><h3>Подрядчик</h3><p>Автоматический забор фида и передача данных в георесурсы.</p></div></div></section>
+    <footer><span>FIT SERVICE <span class="footer-separator">/</span> Инструкция по станциям</span><span>Основа: рабочий сценарий сентября 2026</span></footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
